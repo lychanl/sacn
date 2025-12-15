@@ -1,0 +1,18 @@
+--algo sac 
+--max_time_steps 3000000 
+--evaluate_time_steps_interval 10000 
+--synchronous 
+--num_parallel_envs 1 
+--num_evaluation_runs 5 
+--batches_per_env 256 
+--gamma 0.98 
+--actor_lr 7.3e-4
+--critic_lr 7.3e-4
+--actor.layers 400 300 
+--critic.layers 400 300
+--actor.activation relu
+--critic.activation relu
+--actor.distribution squashed
+--actor.clip_log_std -20 2
+--critic.tau 0.02
+--buffer.n 1
